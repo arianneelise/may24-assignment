@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.upper-page-wrapper {
+  background-image: url("/static/images/angry-child.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  height: 78vh;
+}
+
+.navbar {
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 30px 0 0 90px;
+}
+.outer-logo {
+  flex: 1 1 0;
+  background-color: #fff40e;
+  height: 65px;
+  width: 133px;
+  padding: 2px;
+  clip-path: polygon(100% 0, 100% 89%, 0 98%, 0 9%);
+  position: absolute;
+  margin-top: -4px;
+  margin-left: 8px;
+}
+
+.inner-logo {
+  color: #fff40e;
+  background-color: #445c66;
+  padding: 15px 15px;
+  letter-spacing: 6px;
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+}
+
+.navbar-menu {
+  display: flex;
+  background-color: #fff40e;
+  position: absolute;
+  right: 80px;
+  top: 24px;
+  padding: 20px;
+}
+
+.navbar-menu > div {
+  padding: 0 20px;
+  color: #445c66;
+  font-weight: 700;
+}
+
+.lower-page-wrapper {
+  display: grid;
+  align-items: center;
+  height: 22vh;
+  grid-template-rows: repeat(2, 50%);
+  position: relative;
+}
+
+.main-content {
+  max-width: 45vw;
+  background-color: #445c66;
+  position: absolute;
+  bottom: 11vh;
+  left: 10vw;
+  height: 27vh;
+  color: #fff40e;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 50px 50px 0 30px;
+  line-height: 1.3em;
+  clip-path: polygon(97% 0, 100% 100%, 3% 100%, 0 12%);
+}
+
+footer {
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  background-color: #fff40e;
+  height: 11vh;
+  padding: 0 70px;
+  color: #445c66;
+}
+
+.footer-content {
+  flex: 2 1 0;
+}
+
+.footer-exit {
+  flex: 1 1 0;
+  text-align: right;
+}
